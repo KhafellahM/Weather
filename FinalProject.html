@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>French Fries🍟</title>
+    <style>
+      a {
+        color: indianred;
+      }
+
+      button {
+        display: block;
+        border-radius: 10px;
+        background-color: darkgoldenrod;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 18px;
+        size: 15px 40px 15px 40px;
+        padding: 12px 18px;
+        border: none;
+        cursor: pointer;
+        width: 300px;
+        height: 50px;
+      }
+      button:hover {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background-color: red;
+      }
+
+      .learnmore {
+        text-decoration: none;
+      }
+
+      .learnmore:hover {
+        text-decoration: none;
+      }
+
+      div {
+        font-size: 14px;
+        text-align: center;
+        line-height: 0;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      img {
+        margin: 0 auto;
+        height: 320px;
+        max-width: 100%;
+        border-radius: 15px;
+        display: block;
+      }
+
+      span {
+        color: red;
+      }
+
+      p {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 18px;
+        line-height: 1, 5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>I <span>&hearts;</span> French Fries🍟</h1>
+    <h2>
+      <em>A side that just goes with everything!</em>
+    </h2>
+    <img
+      src="https://www.thespruceeats.com/thmb/_uO-Y9p8eu4ZVFnNQZmVqjLPoBg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-make-homemade-french-fries-2215971-hero-01-02f62a016f3e4aa4b41d0c27539885c3.jpg"
+    />
+
+    <p>
+      French fries, chips, finger chips, french-fried potatoes, or simply fries,
+      are batonnet or allumette-cut deep-fried potatoes of disputed origin from
+      Belgium or France. They are prepared by cutting potatoes into even strips,
+      drying them, and frying them, usually in a deep fryer.
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/French_fries"
+        target="_blank"
+        class="Learn more on wikipedia"
+      >
+        Read more about French Fries on <wikipedia class="com"></wikipedia
+      ></a>
+    </p>
+    <br />
+    <br />
+    <button>Do you Love French Fries?</button>
+    <br />
+    <br />
+    This page was built By Khafellah Morse
+
+    <script>
+      function doyoulovefries() {
+        let name = prompt("What is your name?");
+        let doyoulovefries = prompt("What is your favorite type of Fries?");
+
+        let h2 = document.querySelector("h2");
+        if ((doyoulovefries = "Potatoes")) {
+          h2.innerHTML = " Hi," + name + "I love Potatoes too!";
+        } else {
+          h2.innerHTML = "I love French Fries too!";
+        }
+      }
+      let applyButton = document.querySelector("button");
+
+      applyButton.addEventListener("click", doyoulovefries);
+    </script>
+  </body>
+</html>
